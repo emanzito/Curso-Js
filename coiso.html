@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .caixa {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .phrases {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container {
+            display: flex;
+        }
+
+        #sim,
+        #nao {
+            background-color: aqua;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa">
+        <div class="phrases">
+            <p>Opa 9vinha rsrsr</p>
+            <p>Cuzinho liberado?</p>
+        </div>
+        <div class="button-container">
+            <div id="sim" onclick="clicar()">
+                Sim
+            </div>
+            <div id="nao" onclick="clicar2()">
+                Não
+            </div>
+        </div>
+    </div>
+    <script>
+        function clicar() {
+            var a = window.document.getElementById('sim')
+            a.innerText = 'Que assim seja'
+        }
+
+    document.querySelector('#nao').addEventListener
+    ("mouseover", function() {
+
+        let h = window.innerHeight - 50
+        let v = window.innerWidth - 50
+        this.style.position = "absolute"
+        this.style.top = Math.random() * h + "px"
+        this.style.left = Math.random() * v + "px"
+    })
+    </script>
+</body>
+
+</html>
